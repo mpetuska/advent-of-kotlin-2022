@@ -1,10 +1,10 @@
-# Advent of Kotlin Template
+# Advent of Kotlin 2022
 
-A template repository providing a simple framework for [Advent of Code](https://adventofcode.com) puzzles.
+Solutions for [Advent of Code](https://adventofcode.com/2022) puzzles in kotlin.
 
 ## Content
 
-After you create a new project based on the current template repository using the [**Use this template**](https://github.com/mpetuska/template-advent-of-kotlin/generate) button,
+After you create a new project based on the current template repository using the **Use this template** button,
 a bare minimal scaffold will appear in your GitHub account with the following structure:
 
 ```
