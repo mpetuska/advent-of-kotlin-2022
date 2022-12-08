@@ -57,8 +57,7 @@ class Day7 : Day() {
   }
 
   override fun part2(input: Lines): Any {
-    val dirs = listDirectory("/", input.drop(1))
-      .flatten()
+    val dirs = listDirectory("/", input.drop(1)).flatten()
     val missingSpace = 30_000_000 - (70_000_000 - dirs[0].size)
     return dirs.reduce { acc, dir ->
       if (dir.size >= missingSpace && dir.size < acc.size) {

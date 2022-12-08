@@ -20,6 +20,7 @@ abstract class Day {
 
   @OptIn(ExperimentalTime::class)
   private fun solve(inputFileName: String, backupInputFileName: String?, solution: (Lines) -> Any) {
+    val part = inputFileName.removeSuffix(".txt")
     val input = readInput(inputFileName)
       ?: backupInputFileName?.let(::readInput)
       ?: error("$inputFileName not found")
@@ -33,7 +34,7 @@ abstract class Day {
                 Input: $inputFileName
                 Answer: $answer
                 Answer copied to clipboard. 
-                Don't forget to submit it at https://adventofcode.com/$year/day/$day
+                Don't forget to submit it at https://adventofcode.com/$year/day/$day#$part
             """.trimIndent()
     )
   }
