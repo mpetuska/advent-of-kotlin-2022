@@ -23,6 +23,14 @@ sourceSets {
   }
 }
 
+kotlin {
+  target {
+    compilations.all {
+      kotlinOptions.languageVersion = "1.8"
+    }
+  }
+}
+
 tasks {
   test {
     useJUnitPlatform()
